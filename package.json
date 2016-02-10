@@ -1,0 +1,22 @@
+{
+  "name": "@f/serialize-form",
+  "description": "Serialize a form to JSON",
+  "repository": "git://github.com/micro-js/serialize-form.git",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "postversion": "git push && git push --tags && npm publish --access=public"
+  },
+  "dependencies": {
+    "@f/brackets": "^1.0.0",
+    "@f/form-controls": "^1.0.0",
+    "@f/get-value": "^1.0.0",
+    "@f/is-element-submittable": "^1.0.0",
+    "@f/reduce-array": "^0.2.1"
+  },
+  "devDependencies": {
+    "hihat": "^2.6.4",
+    "tape": "^4.2.2"
+  }
+}

@@ -2,7 +2,7 @@
   "name": "@f/serialize-form",
   "description": "Serialize a form to JSON",
   "repository": "git://github.com/micro-js/serialize-form.git",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {

@@ -20,6 +20,17 @@ test('should work', function (t) {
     '<input type="text" name="colors[]" value="red" />'
   )), {first_name: 'micro', last_name: 'js', colors: ['red'], enabled: true})
 
+  t.end()
+})
+
+test('checkbox groups should work', function (t) {
+  t.deepEqual(serialize($(
+    '<input type="checkbox" name="colors[]" value="red" checked />',
+    '<input type="checkbox" name="colors[]" value="blue" checked />',
+    '<input type="checkbox" name="colors[]" value="green" />'
+  )), {
+    colors: ['red', 'blue']
+  })
 
   t.end()
 })
